@@ -1,0 +1,69 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100;
+    width: 100;
+}
+.logo span{
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    width: 135px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+.navbar{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    padding: 35px 0;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin:0 20px;
+    position: relative;
+    
+}
+.navbar ul li::after{
+    content: '';
+    width: 0% ;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #fff;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    transform: translateY(-50%);
+    color:#fff;
+    
+}
+.content h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
