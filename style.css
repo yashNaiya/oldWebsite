@@ -43,7 +43,7 @@ body{
 .navbar ul li::after{
     content: '';
     width: 0% ;
-    height: 2px;
+    height: 0.125em;
     position: absolute;
     left: 0;
     bottom: -0.625em;
