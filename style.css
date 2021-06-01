@@ -110,7 +110,7 @@ span{
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: 0.5s;
+    transition: 1s;
 }
 button:hover span{
     width: 100%;
@@ -137,7 +137,7 @@ nav i{
         }
         .nav-links{
             position: absolute;
-            background: rgb(110, 104, 13);
+            background: hsl(208deg 41% 19%);
             height: 100vh;
             width: 200px;
             top: 0;
