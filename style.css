@@ -2,55 +2,64 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 body{
     margin: 0;
     background-color:white;
 }
- .container1{
-    background-image: url("background1.jpg");
+ .s1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/homeBack.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 } 
 .logo h1{
-    font-family: 'Orbitron', sans-serif;
-    color: #fff;
-    width: 8.4375em;
+    width: 135px;
     cursor: pointer;
     font-size: xx-large;
 }
-.navbar{
-    display: flex;
-    margin: auto;
-    width: 85%;
-    padding: 2.1875em 0;
-    justify-content: space-between;
-}
-.navbar ul li a{
+.logo h1 a{
+    font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: #fff;
 }
-.navbar ul li{
+nav{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    padding: 35px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    text-align: right;
+    flex: 1;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links ul li{
     display: inline-block;
     list-style: none;
-    margin:0 1.25em;
+    /* margin:0 20px; */
+    padding: 8px 12px;
     position: relative;
-    
 }
-.navbar ul li::after{
+.nav-links ul li::after{
     content: '';
     width: 0% ;
-    height: 0.125em;
-    position: absolute;
-    left: 0;
-    bottom: -0.625em;
-    background: hsl(61, 80%, 48%);
+    height: 2px;
+    background: #fff;
     transition: 0.5s;
+    display: block;
+    margin: auto;
 }
-.navbar ul li:hover::after{
+.nav-links ul li:hover::after{
     width: 100%;
 }
 .content{
@@ -78,16 +87,21 @@ button{
     text-align: center;
     margin: 20px 10px;
     font-weight: bold;
+    font-size: 15px;
     border-radius: 25px;
-    border: 2px solid hsl(61, 80%, 48%);
+    border: 2px solid #fff;
     background: transparent;
     cursor: pointer;
     color: whitesmoke;
     position: relative;
     overflow: hidden;
 }
+button:hover{
+    color: black;
+    border-color: transparent;
+}
 span{
-    background: hsl(60, 3%, 13%);
+    background: #fff;
     height: 100%;
     width: 0%;
     border-radius: 25px;
@@ -99,4 +113,50 @@ span{
 }
 button:hover span{
     width: 100%;
+}
+
+nav i{
+    color: transparent;
+}
+
+@media(max-width: 700px){
+        .content h1{
+            font-size: 20px;
+        }
+        .content p{
+            font-size: 14px;
+        }
+
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            /* color: #000; */
+            font-weight: bold;
+        }
+        .nav-links{
+            position: absolute;
+            background: rgb(110, 104, 13);
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            font-size: 12px;
+            transition: 1s;
+        }
+        .nav-links ul{
+            padding: 13px;
+        }
+        nav i{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .nav-links ul li::after{
+            color: #000;
+        }
 }
