@@ -4,16 +4,21 @@
     padding: 0;
 }
 body{
+    margin: 0;
+    background-color:white;
+}
+ .container1{
     background-image: url("background1.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: auto;
-    width: 100;
-}
+    height: 100vh;
+    width: 100vw;
+} 
 .logo h1{
     font-family: 'Orbitron', sans-serif;
     color: #fff;
-    width: 135px;
+    width: 8.4375em;
     cursor: pointer;
     font-size: xx-large;
 }
@@ -21,7 +26,7 @@ body{
     display: flex;
     margin: auto;
     width: 85%;
-    padding: 35px 0;
+    padding: 2.1875em 0;
     justify-content: space-between;
 }
 .navbar ul li a{
@@ -31,7 +36,7 @@ body{
 .navbar ul li{
     display: inline-block;
     list-style: none;
-    margin:0 20px;
+    margin:0 1.25em;
     position: relative;
     
 }
@@ -41,8 +46,8 @@ body{
     height: 2px;
     position: absolute;
     left: 0;
-    bottom: -10px;
-    background: #fff;
+    bottom: -0.625em;
+    background: hsl(61, 80%, 48%);
     transition: 0.5s;
 }
 .navbar ul li:hover::after{
@@ -74,7 +79,7 @@ button{
     margin: 20px 10px;
     font-weight: bold;
     border-radius: 25px;
-    border: 2px solid #000;
+    border: 2px solid hsl(61, 80%, 48%);
     background: transparent;
     cursor: pointer;
     color: whitesmoke;
@@ -82,7 +87,7 @@ button{
     overflow: hidden;
 }
 span{
-    background: #282a29;
+    background: hsl(60, 3%, 13%);
     height: 100%;
     width: 0%;
     border-radius: 25px;
