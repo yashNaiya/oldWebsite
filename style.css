@@ -7,7 +7,6 @@
 body{
     margin: 0;
     background-color:white;
-    /* filter: none; */
 }
  .s1{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/homeBack.jpg");
@@ -127,7 +126,10 @@ nav i{
         .content p{
             font-size: 14px;
         }
-
+        .s1{
+            height: 100vh;
+            width: 100%;
+        }
         .nav-links ul li{
             display: block;
         }
@@ -215,3 +217,83 @@ h3{
         flex-direction: column;
     }
 }
+
+
+
+
+/* Project */
+
+.projects{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.projects h1{
+    font-size: 36px;
+    font-weight: 600;}
+
+.projects p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+/* .projects img{
+    margin: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.projects img:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0,0.2);
+ ;} */
+
+ .row{
+        display: flex;
+ }
+ .projcol{
+     width: 250px;
+     height: 400px;
+     margin: 12px;
+     transition: 0.5s;
+     position: relative;
+     border-radius: 8px;
+     cursor: pointer;
+     background: #fff3f3;
+     overflow: hidden;
+ }
+ .layer{
+     background: transparent;
+     height: 100%;
+     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+}
+ .projcol:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0,0.2);
+ }
