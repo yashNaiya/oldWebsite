@@ -324,6 +324,10 @@ h3{
  }
  @media(max-width:700px)
  {
+     .contect{
+         display: flex;
+         padding-top: 30px;
+     }
      .contback{
          background-size: auto;
          background-image: linear-gradient(#eeeeee,rgba(121, 112, 112, 0.7)),url("images/work.jpg");
