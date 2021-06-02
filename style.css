@@ -254,6 +254,7 @@ h3{
 
  .row{
         display: flex;
+        align-items: center;
  }
  .projcol{
      width: 250px;
@@ -296,4 +297,46 @@ h3{
 }
  .projcol:hover{
     box-shadow: 0 0 20px 0px rgb(0, 0,0.2);
+ }
+
+
+ /* Contect */
+
+ .contect{
+     margin: 200px auto;
+     width: 80%;
+     background-position: center;
+     background-size: cover;
+     border-radius: 10px;
+     text-align: center;
+ }
+ .contect h1{
+     font-size: 36px;
+     font-weight: 600;
+     margin-bottom: 20px;
+ }
+ .contback{
+    padding: 35px;
+     background-image:url("images/work.jpg");
+    background-size: cover;
+    border-radius: 8px;
+    margin-top: 40px;
+ }
+ @media(max-width:700px)
+ {
+     .contback{
+         background-size: auto;
+         background-image: linear-gradient(#eeeeee,rgba(121, 112, 112, 0.7)),url("images/work.jpg");
+     }
+ }
+ .contbut{
+     direction: unset;
+     background-color: rgba(226, 0, 0, 0.8);
+     width: 150px;
+     border: transparent;
+     transition: 0.5s;
+ }
+ .contbut:hover{
+     color: #000;
+     background-color: #fff;
  }
