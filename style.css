@@ -227,7 +227,7 @@ h3{
     margin: auto;
     text-align: center;
     width: 80%;
-    padding-top: 50px;
+    padding: 50px 0px;
 }
 
 .projects h1{
@@ -303,12 +303,17 @@ h3{
  /* Contect */
 
  .contect{
-     margin: 200px auto;
-     width: 80%;
-     background-position: center;
-     background-size: cover;
-     border-radius: 10px;
-     text-align: center;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 50px 0px;
+    margin: 50px auto;
+ }
+ .contFB{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
  }
  .contect h1{
      font-size: 36px;
@@ -320,16 +325,19 @@ h3{
      background-image:url("images/work.jpg");
     background-size: cover;
     border-radius: 8px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    width: 80%;
+ }
+ .label{
+     float: left;
  }
  @media(max-width:700px)
  {
-     .contect{
-         display: flex;
-         padding-top: 30px;
-     }
      .contback{
+         display: block;
          background-size: auto;
+         /* margin-top: 400px; */
+         margin-bottom: 20px;
          background-image: linear-gradient(#eeeeee,rgba(121, 112, 112, 0.7)),url("images/work.jpg");
      }
  }
@@ -344,3 +352,110 @@ h3{
      color: #000;
      background-color: #fff;
  }
+
+
+
+
+ /* mailBox */
+
+
+ 
+ .contect .close{
+    display: flex;
+    float: right;
+  }
+    .container {
+      display: none;
+      width: 90%;
+      height: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 0 0 20px 0px rgb(0, 0,0.2);
+      background-color: hsl(0, 100%, 98%);
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .close{
+      display: flex;
+      justify-content: left;
+    }
+    .close i{
+        cursor: pointer;
+    }
+    .but{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 25px;
+    }
+    
+    .form-group {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+      border: 1px solid rgba(128, 128, 128, 0.199);
+      margin-top: 5px;
+    }
+    
+    textarea {
+      resize: vertical;
+      align-self: right;
+    }
+   .contect button[type="submit"] {
+      width: 150px;
+      border: none;
+      outline: none;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      font-family: "Montserrat";
+      background-color: rgba(226, 0, 0, 0.7);
+      text-align: center;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s ease background-color;
+    }
+    .contect button[type="submit"]:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    #status {
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+      padding: 10px;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+    #status.success {
+      background-color: rgb(211, 250, 153);
+      animation: status 4s ease forwards;
+    }
+    #status.error {
+      background-color: rgb(250, 129, 92);
+      color: white;
+      animation: status 4s ease forwards;
+    }
+    @keyframes status {
+      0% {
+        opacity: 1;
+        pointer-events: all;
+      }
+      90% {
+        opacity: 1;
+        pointer-events: all;
+      }
+      100% {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
