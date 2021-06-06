@@ -9,7 +9,7 @@ body{
     background-color:white;
 }
  .s1{
-    background-image: linear-gradient(rgba(30, 21, 4, 0.7),rgba(4,9,30,0.7)),url("images/homeBack.jpg");
+    background-image: linear-gradient(#2f3637,rgb(60 59 57 / 70%)),url(images/homeBack.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ nav i{
         }
         .nav-links{
             position: absolute;
-            background:#ffccbc;
+            background:rgb(230 142 134);
             height: 100vh;
             width: 200px;
             top: 0;
@@ -192,6 +192,7 @@ nav i{
     display: flex;
     justify-content: space-between;
 }
+
 .edu-col{
     flex-basis: 40%;
     background: #fff3f3;
@@ -201,6 +202,7 @@ nav i{
     box-sizing: border-box;
     transition: 0.5s;
     cursor: pointer;
+    width: 80%;
 }
 
 h3{
@@ -237,9 +239,9 @@ h3{
 
 .projects p{
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 22px;
-    padding: 10px;
+    padding: 15px;
 
 }
 /* .projects img{
@@ -257,6 +259,11 @@ h3{
         display: flex;
         align-items: center;
  }
+ .row a{
+     text-decoration: none;
+     color: white;
+     transition: .5s ease-in;
+ }
  .projcol{
      width: 250px;
      height: 400px;
@@ -265,8 +272,14 @@ h3{
      position: relative;
      border-radius: 8px;
      cursor: pointer;
-     background: #fff3f3;
      overflow: hidden;
+ }
+ .projcol img{
+    width: 250px;
+    height: 400px;
+ }
+ .rows button{
+     border: none;
  }
  .layer{
      background: transparent;
@@ -277,11 +290,12 @@ h3{
     left: 0;
  }
 .layer:hover{
-    background: rgba(226, 0, 0, 0.7);
+    background: rgba(236, 76, 76, 0.5);
 }
 .layer:hover h3{
-    bottom: 49%;
+    bottom: 45%;
     opacity: 1;
+
 }
 .layer h3{
     text-transform: uppercase;
@@ -289,7 +303,7 @@ h3{
     width: 100%;
     opacity: 0;
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 15px;
     transform: translateX(-50%);
     position: absolute;
     bottom: 0;
