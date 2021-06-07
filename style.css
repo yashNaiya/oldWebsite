@@ -272,7 +272,7 @@ h3{
  }
  .row a{
      text-decoration: none;
-     color: white;
+     color: black;
      transition: .5s ease-in;
  }
  .projcol{
@@ -284,6 +284,7 @@ h3{
      border-radius: 8px;
      cursor: pointer;
      overflow: hidden;
+     box-shadow: 2px 4px 4px rgb(158, 157, 157);
  }
  .projcol img{
     width: 100%;
@@ -301,7 +302,7 @@ h3{
     left: 0;
  }
 .layer:hover{
-    background: rgba(236, 76, 76, 0.5);
+    background: rgba(228, 227, 227, 0.5);
 }
 .layer:hover h3{
     bottom: 45%;
