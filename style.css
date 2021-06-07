@@ -19,8 +19,9 @@ body{
     height: 100vh;
 }
  .s1{
-    background-image: linear-gradient(#2f3637,rgb(60 59 57 / 70%)),url(images/homeBack.jpg);
-    background-size: cover;
+    background-image: url(images/Web-Header-Background.svg);
+    opacity: 0.8;
+    background-size: auto 718px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -28,6 +29,11 @@ body{
     height: 100vh;
     width: 100%;
 } 
+@media(max-width: 750px){
+    .s1{
+        background-size: 560px;
+    }
+}
 .logo h1{
     width: 135px;
     cursor: pointer;
@@ -145,12 +151,12 @@ nav i{
             display: block;
         }
         .nav-links ul li a{
-            /* color: #000; */
+            color: #000;
             font-weight: bold;
         }
         .nav-links{
             position: absolute;
-            background:rgb(230 142 134);
+            background:#fff;
             height: 100vh;
             width: 200px;
             top: 0;
@@ -160,12 +166,15 @@ nav i{
             font-size: 12px;
             transition: 1s;
         }
+        .fa-ellipsis-v{
+            color: #fff;
+        }
         .nav-links ul{
             padding: 13px;
         }
         nav i{
             display: block;
-            color: #fff;
+            color: #000;
             margin: 10px;
             font-size: 22px;
             cursor: pointer;
@@ -279,6 +288,9 @@ h3{
      color: black;
      transition: .5s ease-in;
  }
+ .info{
+     display: none;
+ }
  .projcol{
      width: 250px;
      height: 400px;
@@ -328,6 +340,12 @@ h3{
 }
  .projcol:hover{
     box-shadow: 0 0 20px 0px rgb(0, 0,0.2);
+ }
+
+ @media(max-width:750px){
+     .info{
+         display: inline;
+     }
  }
 
 
