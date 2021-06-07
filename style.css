@@ -29,6 +29,7 @@ body{
     height: 100vh;
     width: 100%;
 } 
+
 .logo h1{
     width: 135px;
     cursor: pointer;
@@ -132,6 +133,8 @@ nav i{
 }
 
 @media(max-width: 750px){
+
+
         .content h1{
             font-size: 26px;
         }
@@ -141,6 +144,7 @@ nav i{
         .s1{
             height: 100vh;
             width: 100%;
+            background-size: cover;
         }
         .nav-links ul li{
             display: block;
