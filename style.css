@@ -29,11 +29,6 @@ body{
     height: 100vh;
     width: 100%;
 } 
-@media(max-width: 750px){
-    .s1{
-        background-size: 560px;
-    }
-}
 .logo h1{
     width: 135px;
     cursor: pointer;
