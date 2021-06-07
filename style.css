@@ -7,6 +7,12 @@
 body{
     margin: 0;
     background-color:white;
+    
+}
+
+.container section{
+    width: 100%;
+    height: 100vh;
 }
  .s1{
     background-image: linear-gradient(#2f3637,rgb(60 59 57 / 70%)),url(images/homeBack.jpg);
@@ -176,6 +182,11 @@ nav i{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+@media(max-width: 750px){
+    .education{
+        padding-top: 25px;
+    }
 }
 .education h1{
     font-size: 36px;
