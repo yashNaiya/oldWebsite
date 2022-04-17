@@ -8,32 +8,32 @@
 	<title>yash naiya</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<script src="https://kit.fontawesome.com/abcac48681.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/favicon1.png">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	<div class="containar">
-	<section class="s1">
+		<section class="s1">
 			<nav>
 				<div class="logo">
 					<h1><a href="index.html">YASH</a></h1>
 				</div>
 				<div class="nav-links" id="nav-links">
 					<div class="close">
-					<i class="fas fa-times" onclick="hidemenu()"></i>
+						<i class="fas fa-times" onclick="hidemenu()"></i>
+					</div>
+					<ul>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#education">EDUCATION</a></li>
+						<li><a href="#skills-main">SKILLS</a></li>
+						<li><a href="#projects">PROJECTS</a></li>
+						<li><a href="#contect">CONTECT</a></li>
+					</ul>
 				</div>
-				<ul>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#education">EDUCATION</a></li>
-					<li><a href="#">SKILLS</a></li>
-					<li><a href="#projects">PROJECTS</a></li>
-					<li><a href="#contect">CONTECT</a></li>
-				</ul>
-			</div>
-			<i class="fas fa-ellipsis-v" onclick="showmenu()"></i>
+				<i class="fas fa-ellipsis-v" onclick="showmenu()"></i>
 			</nav>
 			<div class="content">
 				<h1>welcome to my portfolio</h1>
@@ -41,129 +41,155 @@
 					checkout.
 				</p>
 				<div>
-					<button type="button" onclick="window.location.href = 'https://github.com/yashNaiya';"><span></span>github</button>
+					<button type="button"
+						onclick="window.location.href = 'https://github.com/yashNaiya';"><span></span>github</button>
 				</div>
 			</div>
-	</section>
+		</section>
 
 
 
-<!-- Education -->
+		<!-- Education -->
 
 
-	<section class="education" id="education">
-		<h1>Education</h1>
-		<p>well i am 19 years old and still years to study, but this are the places where i have studied so far.</p>
+		<section class="education" id="education">
+			<h1>Education</h1>
+			<p>well i am 19 years old and still years to study, but this are the places where i have studied so far.</p>
 
-		<div class="row">
-			<div class="edu-col">
-				<h3>schooling</h3>
-				<p>Shree Swaminarayan Gurukul<br>Bhavnagar</p>
+			<div class="row">
+				<div class="edu-col">
+					<h3>schooling</h3>
+					<p>Shree Swaminarayan Gurukul<br>Bhavnagar</p>
+				</div>
+				<div class="edu-col">
+					<h3>degree</h3>
+					<p>Birla Vishvakarma Mahavidyalaya<br>vidhyanagar</p>
+				</div>
+
 			</div>
-			<div class="edu-col">
-				<h3>degree</h3>
-				<p>Birla Vishvakarma Mahavidyalaya<br>vidhyanagar</p>
-			</div>
-
-		</div>
-	</section>
-</div>
-
-
-
-<!-- Projects -->
-
-<section class="projects" id="projects">
-	<h1>
-		Bits i've worked on
-	</h1>
-	<p style="text-align: center;">As you can see these are some besic projects but for now it is what it is<br>
-	come back later to see more advanced or atleast better projects</p>
-	<div class="row">
-		<a href="https://yashnaiya.me/clock/">
-		<div class="projcol">
-			<img src="./images/clockPage.jpg" alt="">
-			<div class="layer">
-				<h3>its a analog clock with the day and night theme change option </h3>
-				
-			</div>
-		</div>
-	</a>
-	<p class="info">its a analog clock with the day and night theme change option</p>
-	<a href="https://yashnaiya.me/calculator/">
-		<div class="projcol">
-			<img src="./images/calculatorPage.jpg" alt="">
-			<div class="layer">
-				<h3>the calculator which shows history can also change opretor given</h3>
-			</div>
-		</div>
-	</a>
-	<p class="info">the calculator which shows history can also change opretor given</p>
-	<a href="https://yashnaiya.me/passwordGenerator/">
-		<div class="projcol">
-			<img src="./images/passwordPage.jpg" alt="">
-			<div class="layer">
-				<h3>it is a rendom password generator which takes user guide for their password</h3>
-			</div>
-		</div>
-	</a>
-	<p class="info">it is a rendom password generator which takes user guide for their password</p>
+		</section>
 	</div>
-</section>
 
-
-<!-- Contact -->
-
-<section class="contect" id="contect">
-	<div class="contFB">
-		<div class="container" id="container">
-			<div class="close">
-				<i class="fas fa-times" onclick="hideBox()"></i>
+	<!-- skills -->
+	<section class="skills-main" id="skills-main">
+		<h1>Skills</h1>
+		<div style="margin: 40px;">
+			<p>HTML</p>
+			<div class="skill-container">
+				<div class="skills html">90%</div>
 			</div>
-			<form action="https://formspree.io/f/mrgrqoyk" method="POST" id="my-form">
-		
-			  <div class="form-group">
-				  <div class="label">
-				<label for="firstName"> First Name</label>
-				  </div>
-				<input type="text" id="firstName" name="firstName">
-			  </div>
-			  <div class="form-group">
-				<div class="label">
-				<label for="latsName">Last Name</label>
-				</div>
-				<input type="text" id="lastName" name="lastName">
-			  </div>
-		
-			  <div class="form-group">
-				<div class="label">
-				<label for="email">Email</label>
-				</div>
-				<input type="email" id="email" name="email">
-			  </div>
-		
-			  <div class="form-group">
-				<div class="label">
-				<label for="massage">Massage</label>
-				</div>
-				<textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-			  </div>
-			  <div class="but">
-			  <button type="submit">Submit</button>
+
+			<p>CSS</p>
+			<div class="skill-container">
+				<div class="skills css">75%</div>
 			</div>
-			
-			</form>
-		  </div>
-		  <div id="status"></div>
-	<div class="contback" id="contBox">
-	<h1>Let's get in thouch</h1>
-	<button class="contbut" onclick="showBox()">
-		Find me
-	</button>
-</div>
-</div>
-</section>
+
+			<p>JavaScript</p>
+			<div class="skill-container">
+				<div class="skills js">65%</div>
+			</div>
+
+			<p>PHP</p>
+			<div class="skill-container">
+				<div class="skills php">50%</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+
+	<section class="projects" id="projects">
+		<h1>
+			Bits i've worked on
+		</h1>
+		<p style="text-align: center;">As you can see these are some besic projects but for now it is what it is
+			come back later to see more advanced or atleast better projects</p>
+		<div class="row" style="margin-top: 2%;">
+			<a href="https://yashnaiya.me/clock/">
+				<div class="projcol">
+					<img src="./images/clockPage.jpg" alt="">
+					<div class="layer">
+						<h3>its a analog clock with the day and night theme change option </h3>
+
+					</div>
+				</div>
+			</a>
+			<p class="info">its a analog clock with the day and night theme change option</p>
+			<a href="https://yashnaiya.me/calculator/">
+				<div class="projcol">
+					<img src="./images/calculatorPage.jpg" alt="">
+					<div class="layer">
+						<h3>the calculator which shows history can also change opretor given</h3>
+					</div>
+				</div>
+			</a>
+			<p class="info">the calculator which shows history can also change opretor given</p>
+			<a href="https://yashnaiya.me/passwordGenerator/">
+				<div class="projcol">
+					<img src="./images/passwordPage.jpg" alt="">
+					<div class="layer">
+						<h3>it is a rendom password generator which takes user guide for their password</h3>
+					</div>
+				</div>
+			</a>
+			<p class="info">it is a rendom password generator which takes user guide for their password</p>
+		</div>
+	</section>
+
+
+	<!-- Contact -->
+
+	<section class="contect" id="contect">
+		<div class="contFB">
+			<div class="container" id="container">
+				<div class="close">
+					<i class="fas fa-times" onclick="hideBox()"></i>
+				</div>
+				<form action="https://formspree.io/f/mrgrqoyk" method="POST" id="my-form">
+
+					<div class="form-group">
+						<div class="label">
+							<label for="firstName"> First Name</label>
+						</div>
+						<input type="text" id="firstName" name="firstName">
+					</div>
+					<div class="form-group">
+						<div class="label">
+							<label for="latsName">Last Name</label>
+						</div>
+						<input type="text" id="lastName" name="lastName">
+					</div>
+
+					<div class="form-group">
+						<div class="label">
+							<label for="email">Email</label>
+						</div>
+						<input type="email" id="email" name="email">
+					</div>
+
+					<div class="form-group">
+						<div class="label">
+							<label for="massage">Massage</label>
+						</div>
+						<textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+					</div>
+					<div class="but">
+						<button type="submit">Submit</button>
+					</div>
+
+				</form>
+			</div>
+			<div id="status"></div>
+			<div class="contback" id="contBox">
+				<h1>Let's get in thouch</h1>
+				<button class="contbut" onclick="showBox()">
+					Find me
+				</button>
+			</div>
+		</div>
+	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="./script.js"></script>
 </body>
+
 </html>

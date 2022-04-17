@@ -90,3 +90,17 @@ window.addEventListener("DOMContentLoaded", function () {
   //       );
   //   }
   // });
+
+
+
+  // animation in skill section
+
+  // const skills = document.querySelectorAll(".skills");
+  // skills.forEach(skill => {
+  //   var windowHeight = window.innerHeight;
+  //   var eleTop = skill.getBoundingClientRect().top;
+  //   var eleVisible = 150;
+  //   if(eleTop < windowHeight - eleVisible){
+  //     skill.classList.add("animation");
+  //   }
+  // });

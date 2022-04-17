@@ -186,8 +186,58 @@ nav i{
         }
 }
 
+/* skills */
+.skills-main{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+}
+.skills-main h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 40px;
+}
+.skills-main p{
+    margin-bottom: 2%;
+    margin-top: 5%;
+    text-align: left;
+}
+.skill-container{
+    border-radius: .8rem;
+}
+
+.skill-container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+    border-radius: .8rem;
+  }
+  
+  .html {width: 90%; background-color: #f58178; opacity: .7;} /* Green */
+  .css {width: 75%; background-color: #f58178; opacity: .7;} /* Blue */
+  .js {width: 65%; background-color: #f58178; opacity: .7;} /* Red */
+  .php {width: 50%; background-color: #f58178; opacity: .7;}
 
 
+  /* .animation{
+      animation: progress 3s ease-in;
+      
+  }
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  } */
 
 /* Education */
 
@@ -214,16 +264,17 @@ nav i{
     padding: 10px;
 }
 .row{
-    margin-top: 5%;
+    margin-top: 8%;
     display: flex;
     justify-content: space-between;
 }
 
 .edu-col{
     flex-basis: 40%;
-    background: #fff3f3;
+    background: #f3baba;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-top: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
